@@ -209,7 +209,7 @@ header{
 			#top .sidebar-menu ul li{
 				text-shadow:0 1px 1px rgba(0,0,0,.24);
 				line-height:22px;
-				margin:10px 0;
+				margin:23px 0 22px;
 			}
 			
 			#top .sidebar-menu ul li i.fa{
@@ -323,12 +323,6 @@ header{
 						color:#fff;
 					}
 
-/* box shadow */	
-#top .sidebar-contact{
-	-webkit-box-shadow: inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:    inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
-	box-shadow:         inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
-}
 
 /**************************************************************
 ============	content
