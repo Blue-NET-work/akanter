@@ -362,6 +362,7 @@ header{
 		display:block;
 		padding:5px 0 5px 30px;
 		color:#09407b;
+		font-size:12px;
 	}
 		.offer .more:hover{
 			color:#ffa200;
