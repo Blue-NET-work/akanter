@@ -159,7 +159,6 @@ header{
 							-webkit-transition: all 0.5s;
 							-moz-transition: all 0.5s;
 							transition: all 0.5s;
-							text-shadow:0 1px 1px rgba(255,255,255,.4);
 						}
 							header nav.navbar.navbar-default .navbar-nav > li:hover > a,
 							header nav.navbar.navbar-default .navbar-nav > .active > a,
@@ -168,7 +167,6 @@ header{
 							header nav.navbar.navbar-default .navbar-nav > .open > a:focus{
 								background:#ffa200;
 								color:#fff;
-								text-shadow:0 1px 1px rgba(0,0,0,.4);
 							}
 						header nav.navbar .navbar-collapse ul li ul.dropdown-menu{
 							font-size:12px;
@@ -326,7 +324,6 @@ header{
 					}
 
 /* box shadow */	
-#top .sidebar-menu,
 #top .sidebar-contact{
 	-webkit-box-shadow: inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:    inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
