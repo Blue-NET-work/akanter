@@ -51,7 +51,7 @@ body{
 a:hover{text-decoration:none;}
 
 
-.m-t-0{margin-top:0px;}
+.m-t-0{margin-top:0;}
 .m-t-10{margin-top:10px;}
 .m-t-15{margin-top:15px;}
 .m-t-20{margin-top:20px;}
@@ -63,6 +63,7 @@ a:hover{text-decoration:none;}
 .m-t-50{margin-top:50px;}
 .m-t-55{margin-top:55px;}
 
+.m-b-0{margin-bottom:0;}
 .m-b-10{margin-bottom:10px;}
 .m-b-20{margin-bottom:20px;}
 .m-b-25{margin-bottom:25px;}
@@ -81,6 +82,8 @@ a:hover{text-decoration:none;}
 .padding-30{padding:30px;}
 .padding-35{padding:35px;}
 .padding-40{padding:40px;}
+
+.no-padding-bottom{padding-bottom:0;}
 
 
 /**************************************************************
@@ -328,31 +331,85 @@ footer{
 			background: -ms-linear-gradient(45deg,  rgba(10,71,136,1) 0%,rgba(12,72,137,1) 34%,rgba(31,87,146,1) 58%,rgba(42,95,151,1) 100%); /* IE10+ */
 			background: linear-gradient(45deg,  rgba(10,71,136,1) 0%,rgba(12,72,137,1) 34%,rgba(31,87,146,1) 58%,rgba(42,95,151,1) 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a4788', endColorstr='#2a5f97',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-			padding:30px;
-			
-			height:400px;
+			padding:30px 30px 20px;
+			text-shadow:0 1px 1px rgba(0,0,0,.34);
 		}
 			
 		#footerContact .sidebar-contact h3{
-			position:relative;
+			background:url(../img/iconInfo.png) no-repeat center left;
 			text-transform:uppercase;
+			padding:20px 0 20px 60px;
 			font-weight:700;
 			font-size:26px;
+			margin:0;
 		}
-			#footerContact .sidebar-contact h3 i.fa{
-			}
 			#footerContact .sidebar-contact h3 span{
 				font-weight:300;
-				font-size:11px;
+				font-size:12px;
 				display:block;
 			}
+			
+		#footerContact .sidebar-contact ul{
+			text-transform:uppercase;
+			margin-left:55px;
+		}
+			#footerContact .sidebar-contact ul li{
+				margin:30px 0;
+				padding:1px 0;
+			}
+				#footerContact .sidebar-contact ul li .fa-li {
+					position: absolute;
+					left: -1.54285714em;
+					width: 1.54285714em;
+					top: 0.14285714em;
+					text-align: center;
+				}
+				#footerContact .sidebar-contact ul li h5{
+					font-size:14px;
+					font-weight:700;
+				}
+				#footerContact .sidebar-contact ul li.phone{
+					padding:15px 0;
+				}
 	
 	#footerContact .sidebar-form-contact{
-		background:#ffa200;
 		padding-left:0;
-
-		height:400px;
+		font-size:14px;
+		color:#fff;
 	}
+		#footerContact .sidebar-form-contact .sidebar-content{
+			background:#ffa200;
+			padding:30px 30px 5px;
+			text-shadow:0 1px 1px rgba(0,0,0,.24);
+		}
+			#footerContact .sidebar-form-contact h3{
+				background:url(../img/iconMail.png) no-repeat center left;
+				text-transform:uppercase;
+				padding:20px 0 20px 60px;
+				font-weight:700;
+				font-size:26px;
+				margin:0 0 14px;
+			}
+				#footerContact .sidebar-form-contact h3 span{
+					font-weight:300;
+					font-size:12px;
+					display:block;
+				}
+			#footerContact .sidebar-form-contact .sidebar-content .message{
+				text-shadow:0 1px 1px rgba(255,255,255,.64);
+			}	
+			#footerContact .sidebar-form-contact form{
+			}
+				#footerContact .sidebar-form-contact form input[type=text],
+				#footerContact .sidebar-form-contact form textarea{
+					-webkit-box-shadow: -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
+					-moz-box-shadow:    -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
+					box-shadow:         -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
+				}
+				#footerContact .sidebar-form-contact form .btn.btn-link{
+					text-transform:uppercase;
+					color:#fff;
+				}
 
 /* footerOffer */
 	footer #footerOffer{
