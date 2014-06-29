@@ -136,7 +136,42 @@ header{
 		
 	header nav.navbar{
 		margin-bottom:0;
+		border-radius:4px 4px 0px 0px;
+		border:1px solid #f4f4f4;
+		border-bottom:none;
+		text-transform:uppercase;
 	}
+		header nav.navbar .container-fluid{
+			padding:0;
+		}
+			header nav.navbar .navbar-collapse{
+				padding-left:5px;
+				padding-right:5px;
+			}
+				header nav.navbar .navbar-collapse ul{
+					width:100%;
+				}
+					header nav.navbar .navbar-collapse ul li{
+						width:25%;
+					}
+						header nav.navbar .navbar-collapse ul li a{
+							-webkit-transition: all 0.5s;
+							-moz-transition: all 0.5s;
+							transition: all 0.5s;
+							text-shadow:0 1px 1px rgba(255,255,255,.4);
+						}
+							header nav.navbar.navbar-default .navbar-nav > li:hover > a,
+							header nav.navbar.navbar-default .navbar-nav > .active > a,
+							header nav.navbar.navbar-default .navbar-nav > .open > a, 
+							header nav.navbar.navbar-default .navbar-nav > .open > a:hover, 
+							header nav.navbar.navbar-default .navbar-nav > .open > a:focus{
+								background:#ffa200;
+								color:#fff;
+								text-shadow:0 1px 1px rgba(0,0,0,.4);
+							}
+						header nav.navbar .navbar-collapse ul li ul.dropdown-menu li{
+							width:100%;
+						}
 
 
 /**************************************************************
@@ -160,7 +195,7 @@ header{
 			background: linear-gradient(to bottom,  rgba(245,245,245,1) 0%,rgba(244,244,244,1) 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-8 */
 			padding:15px 30px;
-			font-size:11px;
+			font-size:12px;
 			text-transform:uppercase;
 		}
 			#top .sidebar-menu ul li{
@@ -176,7 +211,14 @@ header{
 		
 			#top .sidebar-menu ul li a{
 				color:#1c4169;
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				transition: all 0.5s;
 			}
+				#top .sidebar-menu ul li a:hover{
+					text-shadow:0 1px 1px rgba(255,255,255,.24);
+					color:#ffa200;
+				}
 		
 		#top .sidebar-contact{
 			background:#009de2;
@@ -218,58 +260,60 @@ header{
 	#top .slider{
 		padding-left:0;
 	}
-	
-	#top .slider .bx-wrapper .bx-viewport {
-		-moz-box-shadow: none;
-		-webkit-box-shadow: none;
-		box-shadow: none; 
-		border: none;
-		left: 0;
-		background: #fff;
-		-webkit-transform: translatez(0);
-		-moz-transform: translatez(0);
-		-ms-transform: translatez(0);
-		-o-transform: translatez(0);
-		transform: translatez(0);
-	}
-		
-		#top .bx-wrapper .bx-prev,
-		#top .bx-wrapper .bx-next{
-			background-image:url(../img/slider/controls.png);
+		#top .slider .bx-wrapper{
+			margin-bottom:30px;
 		}
-		#top .bx-wrapper .bx-pager{
-			width:90%;
-			right:10px;
-			bottom:10px;
-			text-align:right;
-		}
-			#top .bx-wrapper .bx-pager.bx-default-pager a{
-				text-align:center;
-				background:#fff;
-				text-indent:0px;
-				width: 30px;
-				height: 30px;
-				padding: 7px 0;
-				color:#1c4169;
-				font-size:12px;
-				font-weight:300;
-				border-radius:50%;
-			
-				-webkit-transition: all 1s, -webkit-transform 0.5s;
-				-moz-transition: all 1s, -moz-transform 0.5s;
-				transition: all 1s, transform 0.5s;
+			#top .slider .bx-wrapper .bx-viewport {
+				-moz-box-shadow: none;
+				-webkit-box-shadow: none;
+				box-shadow: none; 
+				border: none;
+				left: 0;
+				background: #fff;
+				-webkit-transform: translatez(0);
+				-moz-transform: translatez(0);
+				-ms-transform: translatez(0);
+				-o-transform: translatez(0);
+				transform: translatez(0);
 			}
-			#top .bx-wrapper .bx-pager.bx-default-pager a:hover{
-				background:#ffa200;
-				color:#fff;
-				transform:rotate(360deg);
-				-ms-transform:rotate(360deg);
-				-webkit-transform:rotate(360deg);
-			}
-			#top .bx-wrapper .bx-pager.bx-default-pager a.active{
-				background:#ffa200;
-				color:#fff;
-			}
+				
+				#top .bx-wrapper .bx-prev,
+				#top .bx-wrapper .bx-next{
+					background-image:url(../img/slider/controls.png);
+				}
+				#top .bx-wrapper .bx-pager{
+					width:90%;
+					right:10px;
+					bottom:10px;
+					text-align:right;
+				}
+					#top .bx-wrapper .bx-pager.bx-default-pager a{
+						text-align:center;
+						background:#fff;
+						text-indent:0px;
+						width: 30px;
+						height: 30px;
+						padding: 7px 0;
+						color:#1c4169;
+						font-size:12px;
+						font-weight:300;
+						border-radius:50%;
+					
+						-webkit-transition: all 1s, -webkit-transform 0.5s;
+						-moz-transition: all 1s, -moz-transform 0.5s;
+						transition: all 1s, transform 0.5s;
+					}
+					#top .bx-wrapper .bx-pager.bx-default-pager a:hover{
+						background:#ffa200;
+						color:#fff;
+						transform:rotate(360deg);
+						-ms-transform:rotate(360deg);
+						-webkit-transform:rotate(360deg);
+					}
+					#top .bx-wrapper .bx-pager.bx-default-pager a.active{
+						background:#ffa200;
+						color:#fff;
+					}
 
 /* box shadow */	
 #top .sidebar-menu,
@@ -279,6 +323,41 @@ header{
 	box-shadow:         inset -5px -5px 10px -6px rgba(0, 0, 0, 0.5);
 }
 
+/**************************************************************
+============	content
+**************************************************************/	
+.content h3.header{
+	color:#093f79;
+	font-size:20px;
+	font-weight:300;
+	margin-bottom:25px;
+	text-shadow:0 1px 1px rgba(0,0,0,.34);
+}
+
+.offer{
+	font-weight:300;
+	font-size:11px;
+	color:#777;
+	text-shadow:0 1px 1px rgba(0,0,0,.15);
+}
+	.offer h3{
+		text-transform:uppercase;
+		color:#0a4584;
+		font-size:16px;
+		font-weight:400;
+	}
+	
+	.offer .more{
+		background:url(../img/more.png) no-repeat center left;
+		display:block;
+		padding:5px 0 5px 30px;
+		color:#09407b;
+	}
+		.offer .more:hover{
+			color:#ffa200;
+		}
+		
+		
 /**************************************************************
 ============	footer
 **************************************************************/	
@@ -402,9 +481,9 @@ footer{
 			}
 				#footerContact .sidebar-form-contact form input[type=text],
 				#footerContact .sidebar-form-contact form textarea{
-					-webkit-box-shadow: -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
-					-moz-box-shadow:    -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
-					box-shadow:         -2px -2px 5px 0px rgba(50, 50, 50, 0.22);
+					-webkit-box-shadow: inset 2px 2px 5px 0px rgba(50, 50, 50, 0.22);
+					-moz-box-shadow:    inset 2px 2px 5px 0px rgba(50, 50, 50, 0.22);
+					box-shadow:         inset 2px 2px 5px 0px rgba(50, 50, 50, 0.22);
 				}
 				#footerContact .sidebar-form-contact form .btn.btn-link{
 					text-transform:uppercase;
@@ -413,7 +492,7 @@ footer{
 
 /* footerOffer */
 	footer #footerOffer{
-		text-shadow:0 1px 1px rgba(0,0,0,.34);
+		text-shadow:0 1px 1px rgba(0,0,0,.15);
 		margin-top:40px;
 	}
 		footer #footerOffer h3{
@@ -428,7 +507,7 @@ footer{
 			padding:0;
 			list-style:none;
 			font-weight:300;
-			font-size:13px;
+			font-size:12px;
 		}
 			footer #footerOffer ul li{
 				border-top:1px solid #dfe1e3;
@@ -465,7 +544,7 @@ footer{
 	font-size:10px;
 	font-weight:400;
 	text-transform:uppercase;
-	text-shadow:0 1px 1px rgba(0,0,0,.24);
+	text-shadow:0 1px 1px rgba(0,0,0,.14);
 }
 	#copyright .autor{
 		text-transform:none;
